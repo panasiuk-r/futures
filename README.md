@@ -34,22 +34,30 @@ For example:
 
 ## Communicating with server
 
-To add a subscription for a specific coin, send a POST request to:
+1. To add a subscription for a specific coin, send a POST request to:
+
 Endpoint: http://YOUR_HOST:3001/api/coin/
+
 With Request Body:
 `{
   "coin": "YOUR_COIN"
 }`
-Use DELETE unsubscribe from coin exchange:
-DELETE http://YOUR_HOST:3001/api/coin/YOUR_COIN
+
+2. Use DELETE unsubscribe from coin exchange:
+
+Endpoint: http://YOUR_HOST:3001/api/coin/YOUR_COIN
 
 Example:
+
 POST http://localhost:3001/api/coin/
+
 Request Body:
 `{
   "coin": "btc"
 }`
+
 DELETE http://localhost:3001/api/coin/btc
+
 
 ## Testing
 
