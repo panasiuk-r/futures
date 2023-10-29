@@ -43,7 +43,7 @@ With Request Body:
   "coin": "YOUR_COIN"
 }`
 
-2. Use DELETE unsubscribe from coin exchange:
+2. Use DELETE to unsubscribe from coin exchange:
 
 Endpoint: http://YOUR_HOST:3001/api/coin/YOUR_COIN
 
