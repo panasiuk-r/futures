@@ -32,6 +32,25 @@ Alternatively, you can use the Dockerfile:
 For example: 
 `docker run -p 3001:3001 --name futures-currency -e DB_HOST="172.24.0.2" -e REDIS_HOST="172.24.0.3" --network futures-currency`
 
+## Communicating with server
+
+To add a subscription for a specific coin, send a POST request to:
+Endpoint: http://YOUR_HOST:3001/api/coin/
+With Request Body:
+`{
+  "coin": "YOUR_COIN"
+}`
+Use DELETE unsubscribe from coin exchange:
+DELETE http://YOUR_HOST:3001/api/coin/YOUR_COIN
+
+Example:
+POST http://localhost:3001/api/coin/
+Request Body:
+`{
+  "coin": "btc"
+}`
+DELETE http://localhost:3001/api/coin/btc
+
 ## Testing
 
 To run tests, follow these steps:
