@@ -34,7 +34,7 @@ For example:
 
 ## Communicating with server
 
-1. To add a subscription for a specific coin, send a POST request to:
+- To add a subscription for a specific coin, send a POST request to:
 
 Endpoint: http://YOUR_HOST:3001/api/coin/
 
@@ -43,7 +43,7 @@ With Request Body:
   "coin": "YOUR_COIN"
 }`
 
-2. Use DELETE to unsubscribe from coin exchange:
+- Use DELETE to unsubscribe from coin exchange:
 
 Endpoint: http://YOUR_HOST:3001/api/coin/YOUR_COIN
 
