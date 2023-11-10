@@ -28,7 +28,8 @@ Alternatively, you can use the Dockerfile:
 1. Clone this repository.
 2. Build an image by running `docker build -t futures-currency .`.
 3. Run the container using the following command, making sure to provide your database and Redis host information:
-`docker run -p 3001:3001 -e DB_HOST="YOUR_DB_HOST" -e REDIS_HOST="YOUR_REDIS_HOST" --network YOUR_DB_REDIS_NETWORK futures-currency`
+`docker run -p 3001:3001 -e DB_HOST="YOUR_DB_HOST" -e REDIS_HOST="YOUR_REDIS_HOST" -e DB_USERNAME="YOUR_DATABASE_USERNAME"
+-e DB_PASSWORD="YOUR_DB_PASSWORD" -e DB_NAME="DATABASE_NAME" -e REDIS_PORT="YOUR_REDIS_PORT" --network YOUR_DB_REDIS_NETWORK futures-currency`
 For example: 
 `docker run -p 3001:3001 --name futures-currency -e DB_HOST="172.24.0.2" -e REDIS_HOST="172.24.0.3" --network futures-currency`
 
